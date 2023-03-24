@@ -15,5 +15,6 @@ def pascal_triangle(n):
         for i in range(n):
             pascal.append([])
             for j in range(i + 1):
-                pascal[i].append(math.factorial(i) // (math.factorial(j) * math.factorial(i - j)))
+                pascal[i].append(math.factorial(
+                    i) // (math.factorial(j) * math.factorial(i - j)))
         return pascal
