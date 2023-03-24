@@ -18,3 +18,8 @@ def pascal_triangle(n):
                 pascal[i].append(math.factorial(
                     i) // (math.factorial(j) * math.factorial(i - j)))
         return pascal
+
+
+if __name__ == "__main__":
+    pascal_triangle(n)
+    
