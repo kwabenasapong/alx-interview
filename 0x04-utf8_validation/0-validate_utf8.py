@@ -15,6 +15,7 @@ therefore you only need to handle the
 8 least significant bits of each integer
 """
 
+
 def validUTF8(data):
     """
     a method that determines if a given
@@ -23,7 +24,8 @@ def validUTF8(data):
     n_bytes = 0
 
     for num in data:
-        # Get the binary representation. We only need the least significant 8 bits
+        # Get the binary representation. We only
+        # need the least significant 8 bits
         # for any given number.
         bin_rep = format(num, '#010b')[-8:]
 
